@@ -1,8 +1,8 @@
 {
   "name": "personal-website",
   "version": "1.0.0",
-  "description": ":hammer_and_wrench: Personal WebSite with ReactJS, Next and TypeScript",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "dev": "next dev"
   },
@@ -23,5 +23,12 @@
     "react-dom": "^17.0.2",
     "styled-components": "^5.3.3",
     "styled-system": "^5.1.5"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "@types/styled-components": "^5.1.19",
+    "@types/styled-system": "^5.1.14",
+    "typescript": "^4.5.4"
   }
 }
