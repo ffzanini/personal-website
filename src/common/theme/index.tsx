@@ -11,11 +11,10 @@ const GlobalStyle = createGlobalStyle`
     outline: none;
     scroll-behavior: smooth;
   }
-  
+
   *::-webkit-scrollbar{
     width:0.3rem;
     background-color: #ddd;
-
   }
 
   *::-webkit-scrollbar-thumb{
