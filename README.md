@@ -22,17 +22,23 @@
 ```
 src
 |-- pages
+  |-- about
+  |-- blog
+  |-- clients
+  |-- home
+  |-- portfolio
   |-- _app.tsx
+  |-- _document.tsx
+  |-- 404.tsx
   |-- index.tsx
 |-- public
   |-- assets
   |-- fonts
   |-- favicon.ico
 |-- src
-  |-- common
-    |-- components
-    |-- context
-    |-- locales
-    |-- theme
-    |-- utils
+  |-- components
+  |-- context
+  |-- locales
+  |-- theme
+  |-- utils
 ```
