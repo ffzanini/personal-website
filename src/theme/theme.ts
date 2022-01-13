@@ -1,7 +1,7 @@
 import { system, Config } from 'styled-system'
 
 const pallette = {
-  black: '#000000',
+  black: 'rgb(34, 34, 34)',
   white: '#ffffff',
   red: '#D50000',
   gray: {

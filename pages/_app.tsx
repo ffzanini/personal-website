@@ -1,7 +1,8 @@
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 
-import { Theme } from '@common/theme'
+import Theme from '@src/theme'
+import { AppProvider } from '@src/context'
 
 import '../public/fonts/fonts.css'
 
@@ -11,9 +12,11 @@ const App = ({ Component, pageProps }: AppProps) => {
       <Head>
         <title>ffzanini.dev</title>
       </Head>
-      <Theme>
-        <Component {...pageProps} />
-      </Theme>
+      <AppProvider>
+        <Theme>
+          <Component {...pageProps} />
+        </Theme>
+      </AppProvider>
     </>
   )
 }

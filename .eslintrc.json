@@ -1,3 +1,21 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["prettier/react", "prettier/standard", "next/core-web-vitals"],
+  "parser": "babel-eslint",
+  "plugins": ["react", "react-hooks", "import", "prettier", "standard"],
+  "rules": {
+    "quotes": [2, "single"],
+    "semi": [2, "never"],
+    "comma-dangle": [2, "never"],
+    "no-trailing-spaces": [2],
+    "jsx-quotes": ["error", "prefer-single"],
+    "react/jsx-boolean-value": [0],
+    "react-hooks/rules-of-hooks": "error",
+    "prettier/prettier": ["error", {"endOfLine": "auto"}],
+    "space-before-function-paren": 0,
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error" ,
+    "no-unused-vars": ["warn", { "ignoreRestSiblings": true }],
+    "no-console": "warn",
+    "no-debugger": "warn"
+  }
 }

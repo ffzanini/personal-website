@@ -37,3 +37,11 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: url('PlayfairDisplay-Regular.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}

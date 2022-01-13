@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     outline: none;
     scroll-behavior: smooth;
+    background-color: white;
   }
 
   *::-webkit-scrollbar{
@@ -26,14 +27,39 @@ const GlobalStyle = createGlobalStyle`
     position: relative;
   }
 
+  html {
+    font-size: 62.5%;
+    @media (max-width: 1279px) {
+      font-size: 50%;
+    }
+  }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
   a {
+    color: inherit;
     text-decoration: none;
+  }
+
+  [disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
   }
 `
 
-export const Theme = ({ children }) => (
-  <>
-    <GlobalStyle />
-    <ThemeProvider theme={theme}>{children}</ThemeProvider>
-  </>
-)
+const Theme = ({ children }) => {
+  return (
+    <>
+      <GlobalStyle />
+      <ThemeProvider theme={theme}>{children}</ThemeProvider>
+    </>
+  )
+}
+
+export default Theme
