@@ -61,7 +61,6 @@ const Home = () => {
         <a href='mailto:devffzanini@gmail.com' rel='noreferrer'>
           <Row mr={['1rem', '1rem']}><Icon size='2.4rem' name='mail'/></Row>
         </a>
-
       </Row>
       <Footer/>
     </Container>
@@ -70,11 +69,11 @@ const Home = () => {
 }
 
 const Image = styled.img`
-  width: 18rem;
-  margin-bottom: 2rem;
+  width: 20rem;
+  margin-bottom: 2.5rem;
   border-radius: 20rem;
   @media (max-width: 768px) {
-    width: 14rem;
+    width: 16rem;
   }
 `
 export default Home

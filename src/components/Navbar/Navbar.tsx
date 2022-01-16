@@ -25,8 +25,8 @@ const Navbar = () => {
 
   return (
     <NavbarContainer bg={'transparent'}>
-      <Row>
-        <NavbarItems height={[listItemsHeight, listItemsHeight, listItemsHeight]} flexDirection={['column', 'column', 'column']}>
+      <Row alignContent={'center'} alignItems={'center'} justifyContent={'center'}>
+        <NavbarItems height={[listItemsHeight, listItemsHeight, listItemsHeight]} flexDirection={['column', 'column', 'column']} justifyContent={'center'} alignItems={'center'}>
           <Link href='/' >
             <a onClick={() => setIsOpen(false)}>
               <Text {...NavbarItemsProps}>{translations.navbar.HomePage}</Text>
@@ -55,27 +55,6 @@ const Navbar = () => {
           <a href='mailto:devffzanini@gmail.com' rel='noreferrer' onClick={() => setIsOpen(false)}>
             <Text {...NavbarItemsProps}>{translations.navbar.Contact}</Text>
           </a>
-          <Row>
-          <Text
-            fontWeight={location === 'pt' ? 'bold' : 'normal'}
-            onClick={() => setLocation('pt')}
-            cursor='pointer'
-            color={textColor}
-            fontSize={'2.8rem'}
-          >
-            PT-BR
-          </Text>
-          <Text fontSize={'2.8rem'}> &nbsp; | &nbsp;</Text>
-          <Text
-            fontWeight={location === 'en' ? 'bold' : 'normal'}
-            onClick={() => setLocation('en')}
-            cursor='pointer'
-            color={textColor}
-            fontSize={'2.8rem'}
-          >
-            EN-US
-          </Text>
-          </Row>
           {isOpen && (
             <Row onClick={() => setIsOpen(false)} cursor='pointer' position='absolute' top={0} right={0} mt={36} mr={40}>
               <Icon
@@ -85,11 +64,34 @@ const Navbar = () => {
             </Row>
           )}
         </NavbarItems>
-        <Row onClick={() => setIsOpen(true)} cursor='pointer' display={['block', 'block', 'block']} ml={[15, 45]}>
+        <Row onClick={() => setIsOpen(true)} cursor='pointer' display={['block', 'block', 'block']}>
           <Icon
             name='menu'
             color={textColor}
           />
+        </Row>
+      </Row>
+      <Row>
+      <Row>
+          <Text
+            fontWeight={location === 'pt' ? 'bold' : 'normal'}
+            onClick={() => setLocation('pt')}
+            cursor='pointer'
+            color={textColor}
+            fontSize={'2.2rem'}
+          >
+            PT-BR
+          </Text>
+          <Text fontSize={'2.2rem'}> &nbsp; | &nbsp;</Text>
+          <Text
+            fontWeight={location === 'en' ? 'bold' : 'normal'}
+            onClick={() => setLocation('en')}
+            cursor='pointer'
+            color={textColor}
+            fontSize={'2.2rem'}
+          >
+            EN-US
+          </Text>
         </Row>
       </Row>
     </NavbarContainer>
@@ -102,7 +104,7 @@ const NavbarContainer = styled.nav<{ bg: string }>`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 32px 0;
+  padding: 3rem 3rem;
   position: fixed;
   left: 0;
   top: 0;
@@ -123,7 +125,7 @@ const NavbarItems = styled(Row)`
   justify-content: center;
   align-items: center;
   p {
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
   }
   ${({ theme }) => `background-color: ${theme.colors.white};`}
 `

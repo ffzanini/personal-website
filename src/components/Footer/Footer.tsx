@@ -15,7 +15,7 @@ const Footer = () => {
         fontFamily='Roboto'
         textAlign='center'
         fontSize={['1.9rem', '1.6rem']}
-        fontWeight={200}
+        fontWeight={300}
         mb={[24, 64]}
         maxWidth={['none', '100%']}
         marginX={1}
