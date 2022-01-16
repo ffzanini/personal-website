@@ -9,7 +9,7 @@ const Close = ({ color, size }: SvgProps) => (
 
 Close.defaultProps = {
   color: 'black',
-  size: '5rem'
+  size: '4rem'
 }
 
 export default Close

@@ -72,23 +72,23 @@ const Navbar = () => {
         </Row>
       </Row>
       <Row>
-      <Row>
+      <Row alignContent={'center'} alignItems={'center'}>
           <Text
             fontWeight={location === 'pt' ? 'bold' : 'normal'}
             onClick={() => setLocation('pt')}
             cursor='pointer'
             color={textColor}
-            fontSize={'2.2rem'}
+            fontSize={'1.7rem'}
           >
             PT-BR
           </Text>
-          <Text fontSize={'2.2rem'}> &nbsp; | &nbsp;</Text>
+          <Text fontSize={'1.7rem'}> &nbsp; | &nbsp;</Text>
           <Text
             fontWeight={location === 'en' ? 'bold' : 'normal'}
             onClick={() => setLocation('en')}
             cursor='pointer'
             color={textColor}
-            fontSize={'2.2rem'}
+            fontSize={'1.7rem'}
           >
             EN-US
           </Text>

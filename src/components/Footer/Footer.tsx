@@ -20,7 +20,7 @@ const Footer = () => {
         maxWidth={['none', '100%']}
         marginX={1}
       >
-        {translations.footer.made} <Icon name='heart'/> {translations.footer.by}. <b>{translations.footer.reserved}</b>.
+        {translations.footer.made} <Icon name='heart'/> {translations.footer.by}. <b>{translations.footer.reserved}</b>
       </Text>
       </Row>
     </Container>
