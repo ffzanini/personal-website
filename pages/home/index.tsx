@@ -19,7 +19,7 @@ const Home = () => {
       <Text fontSize={['1.5rem', '2rem']} letterSpacing='0.1rem' textAlign='center' fontWeight={500} mt={['0.4rem', '0.5rem']} >
         {translations.home.role}<a target='_blank' href={translations.home.link}>{translations.home.company}</a>
       </Text>
-      <Text fontSize={['1.8rem', '2rem']} textAlign='center' fontWeight={300} mt={['1.5rem', '2rem']} lineHeight='1.6' marginX={3}>
+      <Text fontSize={['1.8rem', '2rem']} textAlign='center' fontWeight={300} mt={['1.5rem', '2rem']} lineHeight='1.6' marginX={'1rem'}>
         {translations.home.description}
       </Text>
       <Text fontSize={['2rem', '2rem']} textAlign='center' fontWeight={500} mt={['3rem', '6rem']}>
