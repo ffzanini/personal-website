@@ -23,7 +23,7 @@ const useTranslation = () => {
 }
 
 const InternacionalizaionProvider = ({ children }) => {
-  const [location, setLocation] = useState<Locations>('pt')
+  const [location, setLocation] = useState<Locations>('en')
 
   const getTranslations = () => {
     if (location === 'en') return en
