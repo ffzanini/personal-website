@@ -1,8 +1,9 @@
 {
-  "name": "Olá, sou o Felipe Frantz Zanini",
-  "role": "Software Engineer na ",
+  "name": "Olá, sou Felipe Frantz Zanini",
+  "role": "Frontend Engineer na ",
   "company": "Nave.rs",
   "link": "https://nave.rs",
-  "description": "Meu atual objetivo profissional é potencializar e compartilhar conhecimento, criando uma ponte entre pessoas e tecnologia. Sou apaixonado por viajar, desenhar, ler, tocar teclado e jiu jitsu. Tenho 28 anos e atualmente moro em Pelotas, Brasil.",
-  "social": "Me siga:"
+  "description": "Meu atual objetivo profissional é potencializar e compartilhar conhecimento, criando uma ponte entre pessoas e tecnologia. Sou apaixonado por viajar, desenhar, ler, tocar teclado e jiu jitsu. Tenho 28 anos e atualmente moro em Pelotas, Brasil. Você pode saber mais sobre mim ",
+  "description_link": "clicando aqui",
+  "social": "Me siga nas redes sociais:"
 }

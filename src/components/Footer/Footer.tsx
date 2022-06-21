@@ -14,11 +14,9 @@ const Footer = () => {
         color='black'
         fontFamily='Roboto'
         textAlign='center'
-        fontSize={['1.9rem', '1.6rem']}
+        fontSize={['2rem', '2rem']}
         fontWeight={300}
-        mb={[24, 64]}
         maxWidth={['none', '100%']}
-        marginX={1}
       >
         {translations.footer.made} <Icon name='heart'/> {translations.footer.by}. <b>{translations.footer.reserved}</b>
       </Text>

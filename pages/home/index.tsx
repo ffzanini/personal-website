@@ -1,7 +1,8 @@
 import { Container, Icon, Navbar, Row, Text } from '@src/components'
 import { Footer } from '@src/components/Footer'
-
 import { useTranslation } from '@src/context'
+
+import Link from 'next/link'
 
 import styled from 'styled-components'
 
@@ -13,16 +14,16 @@ const Home = () => {
     <Navbar/>
     <Container flexDirection='column' alignContent='center' alignItems='center' justifyContent='center' height={'100vh'} maxWidth={'100rem'} margin={'0 auto'}>
       <Image src='https://avatars.githubusercontent.com/u/20977822'></Image>
-      <Text fontSize={['2.5rem', '5rem']} letterSpacing='0.1rem' fontFamily={'PlayfairDisplay'} textAlign='center' fontWeight={900}>
+      <Text fontSize={['3rem', '4.5rem']} fontFamily={'CrimsonText'} fontWeight={700} lineHeight='1.2'>
         {translations.home.name}
       </Text>
-      <Text fontSize={['1.5rem', '2rem']} letterSpacing='0.1rem' textAlign='center' fontWeight={500} mt={['0.4rem', '0.5rem']} >
-        {translations.home.role}<a target='_blank' href={translations.home.link}>{translations.home.company}</a>
+      <Text fontSize={['2rem', '2rem']} fontWeight={400} mt={['1rem', '1rem']} lineHeight='1.2'>
+        {translations.home.role} <LinkToCompany target='_blank' href={translations.home.link}>{translations.home.company}</LinkToCompany>
       </Text>
-      <Text fontSize={['1.8rem', '2rem']} textAlign='center' fontWeight={300} mt={['1.5rem', '2rem']} lineHeight='1.6' marginX={'1rem'}>
-        {translations.home.description}
+      <Text fontSize={['1.8rem', '2rem']} textAlign='center' fontWeight={300} mt={['1.5rem', '2rem']} lineHeight='1.6' >
+        {translations.home.description} <Link href='/about'><LinkToAbout> {translations.home.description_link}</LinkToAbout></Link>.
       </Text>
-      <Text fontSize={['2rem', '2rem']} textAlign='center' fontWeight={500} mt={['3rem', '6rem']}>
+      <Text fontSize={['1.8rem', '1.8rem']} fontWeight={400} mt={['3rem', '4rem']}>
         {translations.home.social}
       </Text>
       <Row alignItems='center' justifyContent='center' width={'100%'} mt={['1rem', '1rem']}>
@@ -74,6 +75,25 @@ const Image = styled.img`
   border-radius: 20rem;
   @media (max-width: 768px) {
     width: 16rem;
+  }
+`
+
+const LinkToCompany = styled.a`
+  font-weight: 500;
+  :hover {
+    color: purple;
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+`
+
+const LinkToAbout = styled.span`
+  cursor:pointer;
+  font-weight: 500;
+  :hover {
+    color: purple;
+    opacity: 0.6;
+    transition: 0.3s;
   }
 `
 export default Home

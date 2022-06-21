@@ -5,11 +5,11 @@ import { Text } from '@src/components/Text'
 import { Row } from '@src/components/Row'
 import { Icon } from '@src/components'
 import { useTranslation } from '@src/context'
+
 import Link from 'next/link'
 
 const Navbar = () => {
   const { location, setLocation, translations } = useTranslation()
-
   const [isOpen, setIsOpen] = useState(false)
 
   const listItemsHeight = isOpen ? '100%' : '0px'
