@@ -1,4 +1,6 @@
 import { AppProps } from 'next/app'
+import { Navbar } from '@src/components'
+
 import Head from 'next/head'
 
 import Theme from '@src/theme'
@@ -14,6 +16,7 @@ const App = ({ Component, pageProps }: AppProps) => {
       </Head>
       <AppProvider>
         <Theme>
+          <Navbar/>
           <Component {...pageProps} />
         </Theme>
       </AppProvider>

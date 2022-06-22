@@ -1,7 +1,6 @@
-import { Container, Text, Icon } from '@src/components'
-
+import { Container, Icon, Row, Text } from '@src/components'
 import { useTranslation } from '@src/context'
-import { Row } from '../Row'
+
 
 const Footer = () => {
   const { translations } = useTranslation()
@@ -14,7 +13,8 @@ const Footer = () => {
         color='black'
         fontFamily='Roboto'
         textAlign='center'
-        fontSize={['2rem', '2rem']}
+        fontSize={['1.6rem', '1.6rem']}
+        lineHeight='1.2'
         fontWeight={300}
         maxWidth={['none', '100%']}
       >
