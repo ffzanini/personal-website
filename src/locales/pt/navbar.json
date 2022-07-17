@@ -1,8 +1,9 @@
 {
-  "aboutPage": "Sobre",
-  "blogPage": "Blog",
-  "clientsPage": "Clientes",
   "HomePage": "Início",
+  "aboutPage": "Sobre",
   "PortifolioPage": "Portfólio",
+  "articlePage": "Artigos",
+  "clientsPage": "Clientes",
+  "recomendationPage": "Recomendações",
   "Contact": "Contato"
 }

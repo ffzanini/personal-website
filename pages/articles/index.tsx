@@ -19,7 +19,7 @@ return(
       maxWidth={['none', '100%']}
       mt={25}
     >
-      Blog - In Construction
+      Articles - In Construction
     </Text>
   </Column>
 </Container>

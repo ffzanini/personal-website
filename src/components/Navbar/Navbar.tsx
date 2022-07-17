@@ -47,16 +47,21 @@ const Navbar = () => {
               <Text {...NavbarItemsProps}>{translations.navbar.clientsPage}</Text>
             </a>
           </Link>
-          <Link href='/blog' >
+          <Link href='/articles' >
             <a onClick={() => setIsOpen(false)}>
-              <Text {...NavbarItemsProps}>{translations.navbar.blogPage}</Text>
+              <Text {...NavbarItemsProps}>{translations.navbar.articlePage}</Text>
+            </a>
+          </Link>
+          <Link href='/recomendations' >
+            <a onClick={() => setIsOpen(false)}>
+              <Text {...NavbarItemsProps}>{translations.navbar.recomendationPage}</Text>
             </a>
           </Link>
           <a href='mailto:devffzanini@gmail.com' rel='noreferrer' onClick={() => setIsOpen(false)}>
             <Text {...NavbarItemsProps}>{translations.navbar.Contact}</Text>
           </a>
           {isOpen && (
-            <Row onClick={() => setIsOpen(false)} cursor='pointer' position='absolute' top={0} right={0} mt={36} mr={40}>
+            <Row onClick={() => setIsOpen(false)} cursor='pointer' position='absolute' top={0} right={0} mt={20} mr={['89%','96.7%']}>
               <Icon
                 name='close'
                 color={textColor}
@@ -79,6 +84,7 @@ const Navbar = () => {
             cursor='pointer'
             color={textColor}
             fontSize={'1.7rem'}
+            fontFamily={'Roboto'}
           >
             PT-BR
           </Text>
@@ -89,8 +95,9 @@ const Navbar = () => {
             cursor='pointer'
             color={textColor}
             fontSize={'1.7rem'}
+            fontFamily={'Roboto'}
           >
-            EN-US
+            EN
           </Text>
         </Row>
       </Row>
@@ -105,7 +112,6 @@ const NavbarContainer = styled.nav<{ bg: string }>`
   justify-content: space-between;
   align-items: center;
   padding: 3rem 3rem;
-  position: fixed;
   left: 0;
   top: 0;
   z-index: 9;

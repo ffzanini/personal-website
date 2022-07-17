@@ -2,9 +2,9 @@ import { SvgProps } from '../IconTypes'
 
 const Menu = ({ color, width, height }: SvgProps) => (
   <svg width={width} height={height} viewBox='0 0 35 25' fill='none'>
-    <rect width='35' height='3' fill={color} />
-    <rect y='11' width='35' height='3' fill={color} />
-    <rect y='22' width='35' height='3' fill={color} />
+    <rect width='32' height='2' fill={color} />
+    <rect y='11' width='32' height='2' fill={color} />
+    <rect y='22' width='32' height='2' fill={color} />
   </svg>
 )
 

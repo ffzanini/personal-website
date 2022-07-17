@@ -1,6 +1,5 @@
 import { Container, Icon, Row, Text } from '@src/components'
 import { Footer } from '@src/components/Footer'
-
 import { useTranslation } from '@src/context'
 
 import Link from 'next/link'
@@ -11,7 +10,7 @@ const Home = () => {
   const { translations } = useTranslation()
 
   return (
-    <Container flexDirection='column' alignContent='center' alignItems='center' justifyContent='center' height={'100vh'} maxWidth={'100rem'} margin={'0 auto'}>
+    <Container flexDirection={'column'} alignContent={'center'} alignItems={'center'} justifyContent={'center'} maxWidth={['95%','85%','60%']} padding={['0','3rem']} margin={['15% auto','10% auto','3.5% auto']}>
       <Image src='https://avatars.githubusercontent.com/u/20977822'/>
       <Text fontSize={['3rem', '4.5rem']} fontFamily={'CrimsonText'} fontWeight={700} lineHeight='1.2'>
         {translations.home.name}

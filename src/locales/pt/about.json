@@ -1,0 +1,88 @@
+{
+  "title": "Sobre mim",
+  "sub_title": "Me conheça um pouco melhor",
+  "description_text": {
+    "text_one_one": "Hello! My name is Felipe Frantz Zanini, a frontend developer, passionate about technology, music, art, jiu jitsu and",
+    "text_one_link":"reading.",
+    "text_one_href":"reading.",
+    "text_one_two": "I'm 29 years old, based in Pelotas, Rio Grande do Sul.",
+    "text_two_one": "I started in the development world in 2008 in technical education. I fell in love with this life after my first algorithm class. I started effectively as a programmer in 2010, when I got my first job out of high school. Since then, 12 years have been dedicated to creating solutions and serving as a bridge between people and technology.",
+    "text_three_one": "I currently work as a frontend developer at Nave.rs creating digital products, custom web solutions for the best customer experience, helping companies organize and scale their products. See my resume here.",
+    "text_four_one": "Since I started working, I have participated in the development of several applications for the most diverse sectors and in reference companies such as: Banco ABC, UFC, SBT, Grupo SEB, Rede AZ, research groups, among others."
+  },
+  "carrer": {
+    "title": "Carrer",
+    "one": {
+      "title": "Zapshop Informática",
+      "description": "Software Engineer",
+      "date": "Jan 2011 - Dec 2015"
+    },
+    "two": {
+      "title": "Alpago",
+      "description": "Founder & CTO",
+      "date": "Jan 2016 - Mar 2020"
+    },
+    "three": {
+      "title": "Universidade Federal de Pelotas - UFPel",
+      "description": "Bolsista CAPES",
+      "date": "Mar 2020 - Apr 2021"
+    },
+    "four": {
+      "title": "Nave.rs",
+      "description_one": "Frontend Developer",
+      "date_one": "Apr 2021 - Oct 2021",
+      "description_two": "Tech Lead",
+      "date_two": "Nov 2021 - Present"
+    }
+  },
+  "education": {
+    "title": "Education",
+    "one": {
+      "title": "Universidade da Região da Campanha - URCAMP",
+      "description": "Técnico em Informática",
+      "date": "jan 2008 - Dec 2010"
+    },
+    "two": {
+      "title": "Universidade da Região da Campanha - URCAMP",
+      "description": "Gestão da Tecnologia em Informação",
+      "date": "Jan 2011 - Dec 2013"
+    },
+    "three": {
+      "title": "Instituto de Desenvolvimento Educacional - IDEAU",
+      "description": "Especialização em Gestão da Tecnologia de Informa",
+      "date": "Jan 2014 - Dec 2015"
+    },
+    "four": {
+      "title": "Universidade Federal de Pelotas - UFPel",
+      "description": "Mestrado em Ciência da Computação",
+      "date": "Mar 2019 - Ago 2021 (unfinished)"
+    }
+  },
+  "courses": {
+    "title": "Courses",
+    "one": {
+      "title": "RocketSeat",
+      "description": "BootCamp Ignite",
+      "date": "Jan 2021 - Feb 2021"
+    },
+    "two": {
+      "title": "Harvard University",
+      "description": "CS50's Web Programming with JavaScript",
+      "date": "Jun 2022 -  Present"
+    },
+    "three": {
+      "title": "",
+      "description": "",
+      "date": ""
+    },
+    "four": {
+      "title": "",
+      "description": "",
+      "date": ""
+    }
+  },
+  "tech": "Tecnologias que já trabalhei e tenho experiência",
+  "contact_email": "devffzanini@gmail.com",
+  "contact_one": "Precisa de ajuda com algum projeto ou quer apenas conversar sobre algum assunto?",
+  "contact_two": "Entre em contato!"
+}
